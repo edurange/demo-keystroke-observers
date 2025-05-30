@@ -27,7 +27,9 @@ from datetime import datetime
 from math import exp
 from time import perf_counter
 
-from textbits import BOLD, FG_RED, RESET
+from textbits import (
+    BG_BLUE, BG_GREEN, BG_RED, BG_YELLOW, BOLD, FG_RED, RESET
+)
 
 __author__ = "Joe Granville"
 __date__ = "20250513"
@@ -61,7 +63,7 @@ class ImmediateTotalizer:
             lt = "<"
         await self.outputq.put(
             f"{FG_RED}[{datetime.now()}]{RESET} -- "
-            f"{BOLD}ImmediateTotalizer{RESET} --\n"
+            f"{BOLD}{BG_BLUE}ImmediateTotalizer{RESET} --\n"
             f"  {numbytes} characters in {delta:.3f} seconds: "
             f"{lt}{rate:.0f} character{plural} per second"
         )
@@ -98,7 +100,7 @@ class LineByLineTotalizer:
                 lt = "<"
             await self.outputq.put(
                 f"{FG_RED}[{datetime.now()}]{RESET} -- "
-                f"{BOLD}LineByLineTotalizer{RESET} --\n"
+                f"{BOLD}{BG_GREEN}LineByLineTotalizer{RESET} --\n"
                 f"  {numbytes} characters in {delta:.3f} seconds: "
                 f"{lt}{rate:.0f} character{plural} per second"
             )
@@ -136,7 +138,7 @@ class FixedIntervalTotalizer:
                 lt = "<"
             await self.outputq.put(
                 f"{FG_RED}[{datetime.now()}]{RESET} -- "
-                f"{BOLD}FixedIntervalTotalizer{RESET} "
+                f"{BOLD}{BG_RED}FixedIntervalTotalizer{RESET} "
                 f"({self.interval} seconds) --\n"
                 f"  {numbytes} characters in {delta:.3f} seconds: "
                 f"{lt}{rate:.0f} character{plural} per second"
@@ -230,7 +232,7 @@ class DynamicIntervalTotalizer:
                 lt = "<"
             await self.outputq.put(
                 f"{FG_RED}[{datetime.now()}]{RESET} -- "
-                f"{BOLD}DynamicIntervalTotalizer{RESET} "
+                f"{BOLD}{BG_YELLOW}DynamicIntervalTotalizer{RESET} "
                 f"({self.interval:.3f} seconds) --\n"
                 f"  {numbytes} characters in {delta:.3f} seconds: "
                 f"{lt}{rate:.0f} character{plural} per second"

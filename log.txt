@@ -1,0 +1,24 @@
+[31m[2025-05-30 12:43:00.331282][0m [1mstartserver[0m: "[1mtoystdioserver[0m" started on 127.0.0.1:5554
+[31m[2025-05-30 12:43:00.331296][0m [1mstartserver[0m: "[1mtoyguideserver[0m" started on 127.0.0.1:5555
+[31m[2025-05-30 12:44:29.753920][0m [1mtoystdioserver[0m: 127.0.0.1:56795 connected
+[31m[2025-05-30 12:44:37.370922][0m [1mtoystdioserver[0m: received [1m[34m'foo\n'[0m from 127.0.0.1:56795
+[31m[2025-05-30 12:49:44.637110][0m [1mstartserver[0m: "[1mtoystdioserver[0m" started on 127.0.0.1:5554
+[31m[2025-05-30 12:49:44.637130][0m [1mstartserver[0m: "[1mtoyguideserver[0m" started on 127.0.0.1:5555
+[31m[2025-05-30 12:50:02.420788][0m [1mtoystdioserver[0m: 127.0.0.1:57151 connected
+[31m[2025-05-30 12:50:04.521165][0m [1mtoystdioserver[0m: received [1m[34m'foo\n'[0m from 127.0.0.1:57151
+[31m[2025-05-30 12:55:52.963691][0m [1mstartserver[0m: "[1mtoystdioserver[0m" started on 127.0.0.1:5554
+[31m[2025-05-30 12:55:52.963706][0m [1mstartserver[0m: "[1mtoyguideserver[0m" started on 127.0.0.1:5555
+[31m[2025-05-30 12:55:57.021238][0m [1mtoystdioserver[0m: 127.0.0.1:57529 connected
+[31m[2025-05-30 12:55:59.015838][0m [1mtoystdioserver[0m: received [1m[34m'test\n'[0m from 127.0.0.1:57529
+[31m[2025-05-30 12:56:15.497477][0m [1mstartserver[0m: "[1mtoystdioserver[0m" started on 127.0.0.1:5554
+[31m[2025-05-30 12:56:15.497492][0m [1mstartserver[0m: "[1mtoyguideserver[0m" started on 127.0.0.1:5555
+[31m[2025-05-30 12:56:19.248627][0m [1mtoystdioserver[0m: 127.0.0.1:57553 connected
+[31m[2025-05-30 12:56:20.949037][0m [1mtoystdioserver[0m: received [1m[34m'test\n'[0m from 127.0.0.1:57553
+[31m[2025-05-30 12:56:20.949363][0m -- [1m[44mImmediateTotalizer[0m --
+  5 characters in 5.452 seconds: <1 character per second
+[31m[2025-05-30 12:56:20.949414][0m -- [1m[42mLineByLineTotalizer[0m --
+  5 characters in 5.452 seconds: <1 character per second
+[31m[2025-05-30 12:56:20.949432][0m -- [1m[41mFixedIntervalTotalizer[0m (0.2 seconds) --
+  5 characters in 5.452 seconds: <1 character per second
+[31m[2025-05-30 12:56:20.949470][0m -- [1m[43mDynamicIntervalTotalizer[0m (0.993 seconds) --
+  5 characters in 5.452 seconds: <1 character per second

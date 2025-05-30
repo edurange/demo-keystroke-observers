@@ -83,9 +83,9 @@ class SubjectMixin:
 
     async def notify(self, message: Any) -> None:
         """Invokes each callback in _observers"""
-        asyncio.gather(
-            callback(message) for callback in self._observers
-        )
+        async with asyncio.TaskGroup() as tg:
+            for callback in self._observers:
+                tg.create_task(callback(message))
 
 
 class SubjectProxy(SubjectMixin):
