@@ -17,7 +17,7 @@ Rather than continue to modify and grow the features/responsibilities of
 analyze.py, I propose this method of creating a data pipeline that obeys
 the Open-Closed Principle, meaning that it is closed to code changes,
 but open to behavior extension by means of a pluggable interface; in
-this example, Observer.attach(). See observerdemo_0_1_1.py.
+this example, Subject.attach(). See observerdemo_0_1_1.py.
 
 In a full scale version, Subjects could potentially be stored in a
 dictionary so that Observers could find and attach to them by keyword,
